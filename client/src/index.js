@@ -1,7 +1,9 @@
 import React from 'react';//import react modules to use ES6
 import ReactDOM from "react-dom";//render to real DOM
 
-const element = <h1>Hello World</h1>
-console.log(element);
+import Counter from './components/counter';
 
-ReactDOM.render(element, document.getElementById('root'));
+//dist = distributable
+import 'bootstrap/dist/css/bootstrap.css';
+
+ReactDOM.render(<Counter />, document.getElementById('root'));

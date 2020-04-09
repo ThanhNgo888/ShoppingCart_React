@@ -14,7 +14,7 @@ class Counter extends Component {
   }
   // =================================================================
   //helper method
-  handleIncrement() {
+  handleIncrement=() => {
     console.log("Increment Clicked", this);
   }
   // =================================================================

@@ -8,9 +8,14 @@ class Counter extends Component {
     tags: []
   };
   // =================================================================
+  constructor(){
+      super();
+      console.log("Constructor", this);
+  }
+  // =================================================================
   //helper method
   handleIncrement() {
-    console.log("Increment Clicked");
+    console.log("Increment Clicked", this);
   }
   // =================================================================
   render() {

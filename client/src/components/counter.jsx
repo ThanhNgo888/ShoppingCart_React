@@ -4,12 +4,12 @@ import React, { Component } from "react";
 //cc => tab
 class Counter extends Component {
   state = {
-    count:0
+    count: this.props.value
   };
   // =================================================================
   //helper method
   handleIncrement= () => {
-    this.setState({value: this.state.value + 1});
+    this.setState({count: this.state.count + 1});
   }
   // =================================================================
   render() {

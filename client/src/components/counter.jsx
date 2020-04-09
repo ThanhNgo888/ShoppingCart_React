@@ -10,7 +10,7 @@ class Counter extends Component {
   // =================================================================
   constructor(){
       super();
-      console.log("Constructor", this);
+      this.handleIncrement = this.handleIncrement.bind(this);
   }
   // =================================================================
   //helper method

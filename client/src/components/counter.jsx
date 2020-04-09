@@ -3,11 +3,13 @@ import React, { Component } from 'react';
 
 //cc => tab
 class Counter extends Component {
-    // state = {  }
+    state = { 
+        count : 0
+    };
     render() { 
         return (
         <div>
-            <h1>Hello World Counter</h1>
+            <span>{this.state.count}</span>
             <button>Increment</button>
         </div>
         );

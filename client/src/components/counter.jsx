@@ -9,10 +9,16 @@ class Counter extends Component {
     render() { 
         return (
         <div>
-            <span>{ 2 + 2 }</span>
+            <span>{this.formatCount()}</span>
             <button>Increment</button>
         </div>
         );
+    }
+
+    //using a function that returns a value
+    //if the property of this object equals zero, returns "Zero", otherwise returns the value of this object
+    formatCount() {
+        return this.state.count === 0? 'Zero' : this.state.count; 
     }
 }
  

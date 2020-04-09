@@ -4,11 +4,13 @@ import React, { Component } from 'react';
 //cc => tab
 class Counter extends Component {
     state = { 
-        count : 0
+        count : 0,
+        imageUrl: "https://picsum.photos/200" //200 x 200 pixel
     };
     render() { 
         return (
         <div>
+            <img src={this.state.imageUrl} alt="" />
             <span>{this.formatCount()}</span>
             <button>Increment</button>
         </div>

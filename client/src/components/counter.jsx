@@ -18,7 +18,9 @@ class Counter extends Component {
     //using a function that returns a value
     //if the property of this object equals zero, returns "Zero", otherwise returns the value of this object
     formatCount() {
-        return this.state.count === 0? 'Zero' : this.state.count; 
+        //use object destructing to pick the count property of this object(this.state) and storing it in a separate constant called "count"
+        const { count } = this.state;
+        return count === 0? 'Zero' : count; 
     }
 }
  

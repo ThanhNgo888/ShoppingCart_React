@@ -4,16 +4,16 @@ import React, { Component } from "react";
 //cc => tab
 class Counter extends Component {
   state = {
-    count: this.props.value
+    value: this.props.value
   };
   // =================================================================
   //helper method
   handleIncrement= () => {
-    this.setState({count: this.state.count + 1});
+    this.setState({value: this.state.value + 1});
   }
   // =================================================================
   render() {
-      console.log("prop", this.props);
+      console.log("props", this.props);
     return (
       <div>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>

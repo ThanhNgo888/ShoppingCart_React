@@ -73,4 +73,11 @@ node server/server.js => Server started on PORT: 4000 in ...... node.
 - terminal: ShoppingCart_React => npm run dev
     - Server started on PORT: 4000 in DEVELOPMENT mode.
     - npm run prod => run in production mode.
-=================================================
+==================================================================================================
+4. Creating First Route | Ecommerce site using reactjs
+- server side:
+    - create new folders named  
+        - controller ->create a file name: productController.js
+            - This will handle all the product ralated logics or controller functions.
+        - routes -> create a file named: product.js
+          
